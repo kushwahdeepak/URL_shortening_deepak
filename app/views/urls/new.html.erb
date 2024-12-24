@@ -1,0 +1,6 @@
+<%= form_with model: @url, local: true do |form| %>
+    <%= form.label :original_url, 'Enter a URL to shorten' %>
+    <%= form.text_field :original_url %>
+    <%= form.submit 'Shorten URL' %>
+  <% end %>
+  
